@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/keycloak?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+    username: keycloak
+    password: keycloak
+#  datasource:
+#    username: sa
+#    url: jdbc:h2:mem:testdb
+
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: admin
+      password: admin
+#    realmImportFile: baeldung-realm.json
